@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/13c8e16530.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container">
+        <a href="index.html"><img src="img/Bouclier.png" alt="logo de mon portfolio"><span>&nbsp;&nbsp;&nbsp;Sacha -
+                PortFolio</span></a>
+        <nav>
+            <a href="index.html"><i class="fa fa-home"></i> Accueil</a>
+            <a href="index.html#realisation"><i class="fa fa-folder-open"></i> Réalisations</a>
+            <a href="index.html#contact"><i class="fa fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="presentation">
+            <div>
+                <div class="container">
+                    <a href="#" class="cta">Découvrez-moi</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="canvas" class="container">
+            <h2>Mes compétences</h2>
+            <canvas id="skill" width="800" height="550"></canvas>
+            <script>
+                function draw() {
+                    const canvas = document.getElementById("skill");
+                    if (canvas.getContext) {
+                        const ctx = canvas.getContext("2d");
+
+                        ctx.fillStyle = "red";
+                        ctx.moveTo(225, 175);
+                        ctx.lineTo(400, 475);
+                        ctx.lineTo(575, 175);
+                        ctx.moveTo(225, 375);
+                        ctx.lineTo(575, 375);
+                        ctx.lineTo(400, 75);
+                        ctx.fill();
+
+                        ctx.fillStyle = "rgba(255, 255, 255, 0.5)";
+                        ctx.font = "1.5rem Open Sans";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "bottom";
+                        ctx.fillText("HTML", 400, 50);
+                        ctx.textBaseline = "top";
+                        ctx.fillText("React", 400, 500);
+                        ctx.textAlign = "start";
+                        ctx.textBaseline = "middle";
+                        ctx.fillText("BootStrap", 600, 150);
+                        ctx.fillText("CSS", 600, 400);
+                        ctx.textAlign = "end";
+                        ctx.fillText("Angular", 200, 150);
+                        ctx.fillText("JavaScript", 200, 400);
+                    }
+                }
+
+                draw();
+            </script>
+        </section>
+
+        <section id="realisation" class="container">
+            <h2>Mes réalisations</h2>
+            <div class="column">
+                <div>
+                    <i class="fa fa-coffee"></i>
+                    <h2>On discute</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div>
+                    <i class="fa fa-flask"></i>
+                    <h2>On expérimente</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div>
+                    <i class="fa fa-code"></i>
+                    <h2>On code</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="container">
+            <h2>Quelques exemples de réalisation</h2>
+            <div class="clear">
+                <h3>Lagon Bleu :</h3>
+                <img src="img/real/lagon.jpg" alt="Le Lagon">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
+            </div>
+            <div class="clear">
+                <h3>Minéralité :</h3>
+                <img src="img/real/mineral.jpg" alt="Le Minéral">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
+            </div>
+            <div class="clear">
+                <h3>Plante :</h3>
+                <img src="img/real/plante.jpg" alt="La Plante">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                <a href="#">En savoir plus <i class="fa fa-plus-circle"></i></a>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contactez-moi</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <form>
+                <input type="text" name="name" placeholder="Votre prénom" autocomplete="off">
+                <input type="text" name="mail" placeholder="Votre mail" autocomplete="off">
+                <textarea name="message" rows="2" placeholder="Votre message" autocomplete="off"></textarea>
+                <a href="#" class="valider">Validez</a>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
